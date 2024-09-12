@@ -1,0 +1,266 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Pangolin&family=Rubik+Bubbles&display=swap');
+ body{
+    font-family: "Oswald";
+    max-width: 1280px;
+    margin: 0 auto;
+    background: linear-gradient(#382608b8, #a1af3c38), 
+                                    url("../images/savanna.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    padding: 20px 50px 18px;
+}
+.div-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(#382608b8, #a1af3c38);
+    min-height: 80px;
+    block-size: auto;
+}
+.div-nav{
+    margin-right: 100px;
+    padding: 20px auto;
+    box-sizing: content-box;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header h2{
+    font-family: "Rubik Bubbles", system-ui;
+    align-self: center;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin: 0px 72px;
+}
+nav{
+    margin: 0px 72px;
+    display: flex;
+    gap: 36px;
+    
+}
+header a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    transition: .5s;
+}
+header .active-group:hover{
+    color: #83802d;
+}
+/* блок управления слайдером */
+.my-box{                        
+    padding: 0px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    right: 11px;
+  }
+  .my-box h3{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    color: gray;
+  }
+  .my-box button{
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 3px;
+    background: linear-gradient(#926a24a8, #a1af3c38);
+    transform: 1s;
+  }
+  .my-box button:hover{
+    background: linear-gradient(#e7a63f7d, #e2ef7d38);
+  }
+/* блок управления слайдером */
+main{
+    padding: 0px 36px;
+}
+.main-section{
+    margin-top: 33px;
+    display: flex;
+    gap: 52px;
+    justify-content: center;
+    align-items: center;
+}
+.main-section img{
+    width: 700px;
+    height: 500px;
+    border-radius: 5px;
+    object-fit: cover;
+    display: flex;
+}
+.main-section h1{
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+}
+.main-section p{
+    margin: 18px 0px 46px 42px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+
+.images-section{
+    padding: 125px auto;;
+    margin: 22px auto;
+    width: 100%;
+}
+
+.images-section__arrows{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    /* position: relative; */
+    margin-bottom: 5px;
+}
+.images-section__arrows h2{
+    font-size: 64px;
+    line-height: 76px;
+
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+.images-section__arrows button{
+    width: 40px;
+    height: 40px;
+    background: rgba(22, 10, 50, 0.1);
+    border-radius: 50%;
+    border: none;
+}
+.images-section__arrows button:hover{
+    background: rgba(111, 119, 24, 0.8);
+}
+.images-section__arrows img{
+    display: block;
+    width: 100%;
+    /* height: 400px; */
+
+}
+
+.images-section__cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    overflow: hidden;
+}
+.images-section__figure{
+    width: 300px;
+    height: 210px;
+    position: relative;
+}
+.images-section__figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+.images-section__figure:hover figcaption{
+    top: 0%;
+  }
+.images-section__figure figcaption{
+    display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  background: linear-gradient(rgba(22, 10, 50, 0.2), rgba(0, 0, 0, 0.803));
+  box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  top: 100%; 
+  cursor: pointer;
+  transition: 1s;
+}
+.images-section__figure h3{
+    font-size: 18px;
+    color: white;
+}
+footer{
+    background: linear-gradient(#382608b8, #a1af3c38);
+    display: flex;
+    flex-direction: column;
+    margin: 0px 36px 33px;
+}
+footer h3{
+    margin: 18px auto;
+    color: #382608b8;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: .7rem;
+    text-align: center;
+}
+.div-footer{
+    padding: 0px 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    border-radius: 5px;
+    height: 70px;
+    gap: 70px;
+    block-size: auto;
+}
+.div-footer img{
+    height: 50px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.div-footer-a:hover img{
+    border: 3px solid burlywood;
+}
+
+@media screen and (max-width: 1224px){
+    .main-section{
+        margin-top: 22px;
+        gap: 22px;
+    }
+    .main-section img{
+        width: 500px;
+        height: 360px;
+    }
+    .main-section h1{
+        font-size: 36px;
+        line-height: 38px;
+        text-align: center;
+    }
+    .main-section p{
+        margin: 12px 0px 36px 42px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .images-section__cards{
+        gap: 24px;
+    }
+    .images-section__figure{
+        width: 215px;
+        height: 150px;
+    }
+
+
+
+  }
